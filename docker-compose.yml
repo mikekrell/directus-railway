@@ -31,12 +31,12 @@ services:
       retries: 5
       start_interval: 5s
       start_period: 30s
-
+      
   directus:
-    image: directus/directus:11.0.0 
+    # image: directus/directus:11.0.0 
     # If you want to build from Dockerfile, use the following instead:
-    # build: 
-    #   context: ./ 
+    build: 
+       context: ./ 
     ports:
       - 8055:8055
     volumes:
